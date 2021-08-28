@@ -1,5 +1,5 @@
 setTimeout(function() {
-if (Key == 28082021) {
+if (Key == 25072021) {
 	var speed = Math.round(getRndInteger(number, number));
 	var time = speed * 1000; // Don't modify
 	document.body.style.zoom = "40%"
