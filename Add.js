@@ -1,5 +1,3 @@
-setTimeout(function() {
-if (Key == 25072021) {
 	var speed = Math.round(getRndInteger(number, number));
 	var time = speed * 1000; // Don't modify
 	document.body.style.zoom = "40%"
@@ -178,15 +176,3 @@ if (Key == 25072021) {
 	parentElement.id = "sf_af_result";
 	parentElement.style = "position:fixed;height:60px;z-index:999;right:0;top:0;width: 250px;background-color:#fff;align-items:center;color:#0084ff;border:1px solid #0084ff;display:flex;flex-direction:column;justify-content:center";
 	document.getElementsByTagName("body")[0].appendChild(parentElement);
-	
-} else {
-	alert('Key không hợp lệ 🚫, liên hệ lợi nhé');
-}
-}, 1000);
-var url = 'https://theloi123.000webhostapp.com/API/Reg.php';
-var Key;
-fetch(url)
-.then(res => res.json())
-.then((out) => {
-Key = out
-})
