@@ -1,12 +1,3 @@
-var url = 'https://theloi.xyz/API/Reg';
-var Key;
-fetch(url)
-.then(res => res.json())
-.then((out) => {
-Key = out
-})
-setTimeout(function() {
-if (Key == 28082021) {
 var del = document.getElementsByClassName('oajrlxb2');
 
 if (window.location.href.includes("allactivity")) {
@@ -37,7 +28,3 @@ add(0);
 } else {
 window.location.href = 'https://www.facebook.com/me/allactivity/?activity_history=false&category_key=PHOTOSANDVIDEOS&manage_mode=false'
 }
-} else {
-	alert('Key không hợp lệ 🚫, liên hệ lợi nhé');
-}
-}, 1000);
