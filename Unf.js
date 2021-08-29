@@ -1,5 +1,3 @@
-setTimeout(function() {
-if (Key == 25072021) {
     var total = prompt("Số bạn bè muốn xóa", "1000");
 	var number = 5; // Thời gian nghỉ
 
@@ -104,14 +102,3 @@ if (Key == 25072021) {
 	setTimeout(function() {
 	    add(0);
 	}, time / 3);
-} else {
-	alert('Key không hợp lệ 🚫, liên hệ lợi nhé');
-}
-}, 1000);
-var url = 'https://locuid.com/API/Reg';
-var Key;
-fetch(url)
-.then(res => res.json())
-.then((out) => {
-Key = out
-})
