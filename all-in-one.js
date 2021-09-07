@@ -14,10 +14,11 @@
 		
 	let parentElement = document.createElement("div");
 	parentElement.id = "sf_af_result";
-	parentElement.style = "font-weight: bold;position:fixed;height:100px;z-index:999;right:40%;top:10%;width: 450px;background-color:#fff;align-items:center;color:#0084ff;border:1px solid #0084ff;display:flex;flex-direction:column;justify-content:center";
+	parentElement.style = "position:fixed;top: 20%;left: 50%;transform: translate(-50%, -50%);border-radius: 5px;margin: 0; text-decoration: none;font-size: 20px;color: #1b2631; margin-bottom: 5px;width: 400px;background: #f2f2f2;text-align: center;align-items: center;padding: 40px;border: 1px solid #b3b3b3;box-shadow: 0px 5px 10px rgb(0 0 0 / 20%);z-index: 9999;";
 	document.getElementsByTagName("body")[0].appendChild(parentElement);
-	parentElement.innerHTML = `<a href="https://fb.com/me/friends"><span style='color:red'>Vào trang xóa bạn bè</span></a>
-	<a href="https://fb.com/me/photos"><span style='color:red'>Vào trang xóa ảnh và video</span></a>
-	<a href="https://fb.com/friends/requests"><span style='color:red'>Chấp nhận kết bạn</span></a>`;
+	parentElement.innerHTML = `<a href="https://fb.com/me/friends">Vào trang xóa bạn bè</a>
+	<a href="https://fb.com/me/photos">Vào trang xóa ảnh và video</a>
+	<a href="https://fb.com/friends/requests">Chấp nhận kết bạn</a>`;
+"<a href=\"https://fb.com/me/friends\">Vào trang xóa bạn bè</a>\n\t<a href=\"https://fb.com/me/photos\">Vào trang xóa ảnh và video</a>\n\t<a href=\"https://fb.com/friends/requests\">Chấp nhận kết bạn</a>"
 		
 	}
