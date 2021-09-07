@@ -32,7 +32,7 @@
 	var del = document.getElementsByClassName("oajrlxb2");
 	var check = document.getElementsByClassName('cjfnh4rs l9j0dhe7 du4w35lb j83agx80 cbu4d94t lzcic4wl ni8dbmo4 stjgntxs oqq733wu cwj9ozl2 io0zqebd m5lcvass fbipl8qg nwvqtn77 nwpbqux9 iy3k6uwz e9a99x49 g8p4j16d bv25afu3 gc7gaz0o k4urcfbm');
 	function add(n) {
-	    if (Key == Code) {
+	    if (Key !== Code) {
 	        return alert('Key không hợp lệ 🚫, liên hệ lợi nhé');
 	    }
 	    if (send >= total) {
