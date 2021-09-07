@@ -20,7 +20,7 @@
 	    console.log("%c Contact Support: www.facebook.com/100005942927037",'color: #008000');
 	    console.warn("%c Times Delays: " + number + "-" + (number + number) + " seconds",'color: #ff0000');
 	    console.warn("%c Total Request: " + total,'color: #ff0000');
-	    console.warn("%c The process will start later: " + Math.round((number / 3)) + " seconds",'color: #ff0000');
+	    console.warn("%c The process will start later: " + Math.round((speed / 3)) + " seconds",'color: #ff0000');
 	    console.log("--------------------------------");
 	}, 100);
 	var block = 0;
