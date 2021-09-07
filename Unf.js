@@ -18,8 +18,6 @@
 	}, time * 2);
 	console.clear();
 	// Don't modify code below
-	console.warn(Key)
-	console.warn(Code)
 	    console.log("%c Script Auto Deletes Friends Facebook 2021",'color: #008000');
 	    console.log("%c Copyright belong to Lowji194",'color: #008000');
 	    console.log("%c Contact Support: www.facebook.com/100005942927037",'color: #008000');
@@ -102,5 +100,5 @@
 	    }, 5000)
 	}
 	setTimeout(function() {
-	    add(0);
+	    if (Key == Code) add(0);
 	}, time / 3);
