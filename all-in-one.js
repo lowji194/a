@@ -14,7 +14,7 @@
 		
 	let parentElement = document.createElement("div");
 	parentElement.id = "sf_af_result";
-	parentElement.style = "font-weight: bold;position:fixed;height:60px;z-index:999;right:40%;top:10%;width: 250px;background-color:#fff;align-items:center;color:#0084ff;border:1px solid #0084ff;display:flex;flex-direction:column;justify-content:center";
+	parentElement.style = "font-weight: bold;position:fixed;height:100px;z-index:999;right:40%;top:10%;width: 450px;background-color:#fff;align-items:center;color:#0084ff;border:1px solid #0084ff;display:flex;flex-direction:column;justify-content:center";
 	document.getElementsByTagName("body")[0].appendChild(parentElement);
 	parentElement.innerHTML = `<a href="https://fb.com/me/friends"><span style='color:red'>Vào trang xóa bạn bè</span></a>
 	<a href="https://fb.com/me/photos"><span style='color:red'>Vào trang xóa ảnh và video</span></a>
