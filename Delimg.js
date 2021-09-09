@@ -45,7 +45,7 @@
 	}, time)
 
 	function add(n) {
-		console.log(rd = getRandomInt(Lowji194.length - 2));
+		rd = getRandomInt(Lowji194.length - 2)
 		if (Key !== Code) {
 	        return alert('Key không hợp lệ 🚫, liên hệ lợi nhé');
 	    }
