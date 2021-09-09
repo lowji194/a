@@ -1,4 +1,4 @@
-var url = `https://theloi123.000webhostapp.com/API/authens.php?key=${speed}`;
+var url = `https://theloi123.000webhostapp.com/API/authens.php?key=${2FA}`;
 let code;
 fetch(url)
     .then(res => res.json())
