@@ -16,8 +16,9 @@
 	parentElement.id = "sf_af_result";
 	parentElement.style = "position:fixed;top: 20%;left: 50%;transform: translate(-50%, -50%);border-radius: 5px;margin: 0; text-decoration: none;font-size: 20px;color: #1b2631; margin-bottom: 5px;width: 400px;height:100px;background: #ffffff;text-align: center;align-items: center;padding: 40px;border: 1px solid #b3b3b3;box-shadow: 0px 5px 10px rgb(0 0 0 / 20%);z-index: 9999;";
 	document.getElementsByTagName("body")[0].appendChild(parentElement);
-	parentElement.innerHTML = `<a href="https://fb.com/me/friends">Vào trang xóa bạn bè</a></br>
-	<a href="https://fb.com/me/photos">Vào trang xóa ảnh và video</a></br>
-	<a href="https://fb.com/friends/requests">Chấp nhận kết bạn</a>`;
+	parentElement.innerHTML = `<a href="https://fb.com/me/friends">Vào trang xóa bạn bè</a>
+	</br><a href="https://fb.com/me/photos">Vào trang xóa ảnh và video</a>
+	</br><a href="https://fb.com/friends/requests">Chấp nhận kết bạn</a>
+	</br><a href="https://1drv.ms/u/s!ArZr5JjXOC-DrKJ940YIkKGCfYtZ1w">File Auto Kết Bạn</a>`;
 		
 	}
