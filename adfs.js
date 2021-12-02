@@ -1,4 +1,3 @@
-		// react post
 		try {
 			let posts = await Facebook.loadUserPosts(UID);
 			const postId1 = posts?.data[0].id;
