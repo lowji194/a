@@ -1,4 +1,4 @@
-
+day = yyyy  + mm  + dd;
 
 
 var today = new Date();
