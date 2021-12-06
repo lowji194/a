@@ -1,7 +1,7 @@
 	var speed = Math.round(getRndInteger(number, number));
 	var time = speed * 1000; // Don't modify
 	document.body.style.zoom = "40%"
-
+	console.log(B)
 	function getRndInteger(min, max) {
 	    return Math.floor(Math.random() * max) + min;
 	}
