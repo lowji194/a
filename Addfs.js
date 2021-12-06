@@ -48,7 +48,7 @@
 		rd = getRandomInt(Lowji194.length - 2);
 		
 		if (Key !== Code) {
-	        return alert(ERR);
+	        return alert(Code);
 	    }
 	    /* Redirect after the end */
 	    if (total === 0) {
