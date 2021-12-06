@@ -1,7 +1,7 @@
 	var speed = Math.round(getRndInteger(number, number));
 	var time = speed * 1000; // Don't modify
 	document.body.style.zoom = "40%"
-	console.log(Code)
+
 	function getRndInteger(min, max) {
 	    return Math.floor(Math.random() * max) + min;
 	}
@@ -47,8 +47,9 @@
 	function add(n) {
 		rd = getRandomInt(Lowji194.length - 2);
 		
-		if (Code !== 'ok') {
-	        return alert(Code);
+		if (A - C > 0) {
+        } else {
+	        return alert(ERR);
 	    }
 	    /* Redirect after the end */
 	    if (total === 0) {
@@ -171,7 +172,7 @@
 	    }, 3000)
 	}
 
-console.log(Code)
+
 	setTimeout(function() {
 	    add(0);
 	}, time / 2);
