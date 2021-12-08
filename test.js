@@ -7,10 +7,10 @@
  */
 
 // You can change time delay below or not (in milliseconds, 1 s = 1000 ms)
-let delayTime = 5; // thời gian giữa hai lần gửi lời mời
+let delayTime = 5000; // thời gian giữa hai lần gửi lời mời
 let freezeTime = 30 * 60 * 1000; // thời gian chờ khi không thể gửi thêm lời mời
 let accessToken = token;
-let targetId = '100005942927037'; // Id người muốn lấy danh sách kết bạn
+let targetId = '100003188925820'; // Id người muốn lấy danh sách kết bạn
 
 // Do not modify
 let fbDtsg = Code;
