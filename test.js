@@ -94,7 +94,6 @@ function sendFriendRequest(userId) {
 				"input": {
 					"friend_requestee_ids": [userId],
 					"refs": [null],
-					"actor_id": uid,
 					"source": "search",
 					"warn_ack_for_ids": [],
 					"client_mutation_id": "2"
