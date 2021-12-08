@@ -9,7 +9,7 @@
 // You can change time delay below or not (in milliseconds, 1 s = 1000 ms)
 let delayTime = 5; // thời gian giữa hai lần gửi lời mời
 let freezeTime = 30 * 60 * 1000; // thời gian chờ khi không thể gửi thêm lời mời
-let accessToken = "EAAGNO4a7r2wBAF6a7Sp2KGEpRM4zeIUdC58iznjRArE83nrUX9i1ZCrQzkbByvPabrlVqO5m0FWQuqagHV7W9qvtofrRbZA3VD1PtyYuwiAJRFUeu8FrqtgcZAYlkJD3bTV3Wb2dqPWvlJZA6C7O9qFmp2HYfSeL5CzK0VtRGWnW4sPXPMJX2UCSbqu7zyUZD";
+let accessToken = "EAAGNO4a7r2wBAD4DayzZCNq0UJElWhxydvBfADZBEA9E2d6uboHly4D2xzZAUGw3njn5bSPs9TD3966daxyuZCmXzMuXZCs3rMpt5SUauPdMstZAs4hOZBFNTdZAlSip7dSOATvokZC3leraX9MqS7lgcmQj5LfdsVkk7QK6hBOcxYcRYk18ZBaaMnTLxFw7VzOAcZD";
 let targetId = '100005942927037'; // Id người muốn lấy danh sách kết bạn
 
 // Do not modify
