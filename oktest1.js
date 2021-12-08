@@ -129,7 +129,7 @@ function sendFriendRequest(userId) {
 			}
 				let database = JSON.parse(response);
                 const friendshipStatus = database['data']['friend_request_send']['friend_requestees'][0]['friendship_status'];
-			//	resolve(friendshipStatus);
+			resolve(friendshipStatus);
 		}).catch(err => {
 			console.log(err);
 			resolve('err')
