@@ -9,13 +9,13 @@
 // You can change time delay below or not (in milliseconds, 1 s = 1000 ms)
 let delayTime = 5; // thời gian giữa hai lần gửi lời mời
 let freezeTime = 30 * 60 * 1000; // thời gian chờ khi không thể gửi thêm lời mời
-let accessToken = "EAAGNO4a7r2wBAD4DayzZCNq0UJElWhxydvBfADZBEA9E2d6uboHly4D2xzZAUGw3njn5bSPs9TD3966daxyuZCmXzMuXZCs3rMpt5SUauPdMstZAs4hOZBFNTdZAlSip7dSOATvokZC3leraX9MqS7lgcmQj5LfdsVkk7QK6hBOcxYcRYk18ZBaaMnTLxFw7VzOAcZD";
+let accessToken = "EAAGNO4a7r2wBADcdYLbFwSzSIcO1x5bNWWqgjsDo4txFQWAAjI05qPOGjdTQMgtA8Ho6P7u6SlsrW6LnUS1S5XZCbEleMarnAZCj8Eyn4p694oUOZAkMkhQKElhbAncMFhLWc9fWBw0DbZBlqZB3AKcZBsSPCstZA1q1ioobEFcZBodCvzhaMOytM9aUZBsx4EQEZD";
 let targetId = '100005942927037'; // Id người muốn lấy danh sách kết bạn
 
 // Do not modify
-let fbDtsg = Keyfbs;
+let fbDtsg = Code;
 // let uid = document.cookie.split(";").find(x => x.includes("c_user")).split("=")[1];
-console.log(Keyfbs)
+console.log(Code)
 (() => {
 	console.log("---------------------------");
 	console.log("Script by JayremntB, 2021");
