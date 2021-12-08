@@ -17,7 +17,7 @@ let fbDtsg = Code;
 // let uid = document.cookie.split(";").find(x => x.includes("c_user")).split("=")[1];
 console.log(Code)
 console.log(token)
-(() => {
+
 	console.log("---------------------------");
 	console.log("Script by JayremntB, 2021");
 	console.log("Send friend request to list friends of an user");
@@ -46,7 +46,7 @@ console.log(token)
 			console.log("👌 DONE!");
 		})();
 	});
-})();
+
 
 function loadFriendsList(uid = '', limit = 5000, chunkLimit = 200) {
 	return new Promise(async (resolve, reject) => {
