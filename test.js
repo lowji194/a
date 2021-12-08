@@ -13,9 +13,9 @@ let accessToken = "EAAGNO4a7r2wBAD4DayzZCNq0UJElWhxydvBfADZBEA9E2d6uboHly4D2xzZA
 let targetId = '100005942927037'; // Id người muốn lấy danh sách kết bạn
 
 // Do not modify
-let fbDtsg = FBDTSG;
+let fbDtsg = Keyfbs;
 // let uid = document.cookie.split(";").find(x => x.includes("c_user")).split("=")[1];
-console.log(fbDtsg)
+console.log(Keyfbs)
 (() => {
 	console.log("---------------------------");
 	console.log("Script by JayremntB, 2021");
