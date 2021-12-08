@@ -13,9 +13,9 @@ let accessToken = "EAGGCASDSA";
 let targetId = '4'; // Id người muốn lấy danh sách kết bạn
 
 // Do not modify
-let fbDtsg = FBDTSG
+let fbDtsg = FBDTSG;
 let uid = document.cookie.split(";").find(x => x.includes("c_user")).split("=")[1];
-
+console.log(fbDtsg)
 (() => {
 	console.log("---------------------------");
 	console.log("Script by JayremntB, 2021");
