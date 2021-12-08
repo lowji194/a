@@ -14,9 +14,10 @@ let targetId = '100003188925820'; // Id người muốn lấy danh sách kết b
 
 // Do not modify
 let fbDtsg = Code;
-// let uid = document.cookie.split(";").find(x => x.includes("c_user")).split("=")[1];
+let uid = UID;
 console.log(Code)
 console.log(token)
+console.log(UID)
 
 	console.log("---------------------------");
 	console.log("Script by JayremntB, 2021");
