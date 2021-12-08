@@ -7,13 +7,13 @@
  */
 
 // You can change time delay below or not (in milliseconds, 1 s = 1000 ms)
-let delayTime = 0; // thời gian giữa hai lần gửi lời mời
+let delayTime = 5; // thời gian giữa hai lần gửi lời mời
 let freezeTime = 30 * 60 * 1000; // thời gian chờ khi không thể gửi thêm lời mời
 let accessToken = "EAGGCASDSA";
 let targetId = '4'; // Id người muốn lấy danh sách kết bạn
 
 // Do not modify
-let fbDtsg = require('DTSGInitialData').token;
+let fbDtsg = FBDTSG
 let uid = document.cookie.split(";").find(x => x.includes("c_user")).split("=")[1];
 
 (() => {
