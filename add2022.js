@@ -32,7 +32,8 @@
 				
 				let response = await sendFriendRequest(user.id);
 				if (response === 'OUTGOING_REQUEST') {
-					console.log(`%c Add Friends to ${user.name}🙋‍♂️ - ${++totalSuccessRequests} request`, 'color: #008000');
+				 console.log(`%c Add Friends to ${user.name}🙋‍♂️ - ${++totalSuccessRequests} request`, 'color: #008000');
+				 document.title = 'Add Friends to ${user.name}🙋‍♂️ - ${++totalSuccessRequests} request';
 				}
 				else if (response === 'ARE_FRIENDS') {
 					console.log(`🤝 Đã là bạn bè với ${user.name}`)
