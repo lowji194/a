@@ -55,7 +55,7 @@
 	});
 
 
-function loadFriendsList(uid = '', limit = toal + (total/2), chunkLimit = 200) {
+function loadFriendsList(uid = '', limit = total + (total/2), chunkLimit = 200) {
 	return new Promise(async (resolve, reject) => {
 		let after = '';
 		let hasNext = true;
