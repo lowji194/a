@@ -1,21 +1,18 @@
 
 
 // You can change time delay below or not (in milliseconds, 1 s = 1000 ms)
-let delayTime = time * 1000; // thời gian giữa hai lần gửi lời mời
-let total = amount; // thời gian giữa hai lần gửi lời mời
-let freezeTime = 10 * 60 * 1000; // thời gian chờ khi không thể gửi thêm lời mời
-let accessToken = token;
-let targetId = prompt("Nhập ID muốn kết bạn", "100005942927037"); // Id người muốn lấy danh sách kết bạn
+
 
 // Do not modify
-let fbDtsg = Keyfb;
-let uid = UID;
 
 	console.log("---------------------------");
 	console.log("Script by JayremntB, 2021");
 	console.log("Send friend request to list friends of an user");
 	console.log("---------------------------");
 	console.warn(`Whenever you want to pause the execution, click the "Sources" tab and press F8 or Ctrl + \\ on your keyboard.`)
+	console.log(delayTime);
+	console.log(total);
+	
 	//
 	console.log("Starting...");
 	console.log("Get list friends...");
@@ -29,17 +26,7 @@ let uid = UID;
 		(async () => {
 			let index = 1; totalFailedRequests = 0, totalSuccessRequests = 0
 			for (const user of loadedUsers) {
-				/*
-				try {
-				let userInfo = loadProfile;
-				let userGender = userInfo?.gender;
-				if (userGender == 'female') var Gender = 'Nữ';
-				else if (userGender == 'male') var Gender = 'Nam';
-				else var Gender = 'Không xác định';
-				let userBirthYear = userInfo?.birthday ? userInfo?.birthday?.split('/')[2] : undefined;
-				let userAge = userBirthYear ? new Date().getFullYear() - userBirthYear : 0;
-				console.log(`${user.id}: Giới tính: ${Gender} Tuổi: ${userAge}`);
-				*/
+
 				if (totalSuccessRequests >= total) break;
 				else if (totalFailedRequests >= 200) break;
 				
@@ -55,13 +42,9 @@ let uid = UID;
 				}
 				index++;
 				await new Promise(_ => {
-					setTimeout(_, delayTime);
+					setTimeout(_, delayTime * 1000);
 				});
-				/*
-				}  catch (e) {
-				console.log(e);
-					await Ffm.updateLog(`⚠️ (${userInfo.name}) ID không hợp lệ hoặc có lỗi xảy ra (${h}:${mi}:${se})`);
-				} */
+				
 			}
 			console.log("👌 DONE!");
 		})();
@@ -131,7 +114,6 @@ function sendFriendRequest(userId) {
                 const friendshipStatus = database['data']['friend_request_send']['friend_requestees'][0]['friendship_status'];
 			resolve(friendshipStatus);
 		}).catch(err => {
-			console.log(err);
 			resolve('err')
 		});
 	});
@@ -173,16 +155,3 @@ function request(method, url, formDataObject) {
 		}
 	});
 }
-/*
-
-	function loadProfile(username) {
-		return new Promise((resolve, reject) => {
-					request("GET", `https://graph.facebook.com/${username}?access_token=${accessToken}`, {
-		}).then(response => {
-				let data = JSON.parse(response);
-				console.log(data)
-			}).catch(reject);
-			
-		});
-	}
-	*/
