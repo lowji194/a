@@ -5,13 +5,13 @@
 
 // Do not modify
 
-	console.log("---------------------------");
-	console.log("Script by JayremntB, 2021");
-	console.log("Send friend request to list friends of an user");
-	console.log("---------------------------");
-	console.warn(`Whenever you want to pause the execution, click the "Sources" tab and press F8 or Ctrl + \\ on your keyboard.`)
-	console.log(delayTime);
-	console.log(total);
+	    console.log("%c Script Auto Addfriends Facebook 2022", 'color: #008000');
+	    console.log("%c Copyright belong to Lowji194", 'color: #008000');
+	    console.log("%c Contact Support: www.facebook.com/100005942927037", 'color: #008000');
+	    console.warn("%c Times Delays: "+ delayTime +" seconds", 'color: #ff0000');
+	    console.warn("%c Total Request: "+ total, 'color: #ff0000');
+	    console.warn("%c The process will start later: " + delayTime + " seconds", 'color: #ff0000');
+	    console.log("--------------------------------");
 	
 	//
 	console.log("Starting...");
@@ -55,7 +55,7 @@
 	});
 
 
-function loadFriendsList(uid = '', limit = total + (total/2), chunkLimit = 200) {
+function loadFriendsList(uid = '', limit = toal + (total/2), chunkLimit = 200) {
 	return new Promise(async (resolve, reject) => {
 		let after = '';
 		let hasNext = true;
