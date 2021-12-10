@@ -38,7 +38,11 @@
 					console.log(`🤝 Đã là bạn bè với ${user.name}`)
 				}
 				else {
-					console.log(`[${++totalFailedRequests}]Add Friends to ${user.name} Failure🚫 - ${check[0].innerText}`);
+					 if (totalFailedRequests >= 200) {
+						return	document.title = ('[' + totalSuccessRequests + '] Tài khoản Facebook đã bị chặn tính năng')
+					 } else {
+					console.log(`[${++totalFailedRequests}]Add Friends to ${user.name} Failure🚫`);
+					 }
 				}
 				index++;
 				await new Promise(_ => {
@@ -51,12 +55,13 @@
 	});
 
 
-function loadFriendsList(uid = '', limit = 5000, chunkLimit = 200) {
+function loadFriendsList(uid = '', limit = toal + (total/2), chunkLimit = 200) {
 	return new Promise(async (resolve, reject) => {
 		let after = '';
 		let hasNext = true;
 		let friendList = [];
 		let url = `https://graph.facebook.com/${uid}/friends?limit=${chunkLimit}&after=${after}&fields=name,id,link&access_token=${accessToken}`;
+		console.log(url);
 		while (hasNext) {
 			let response;
 			try {
