@@ -33,10 +33,14 @@
 				let response = await sendFriendRequest(user.id);
 				if (response === 'OUTGOING_REQUEST') {
 				 console.log(`%c Add Friends to ${user.name}🙋‍♂️ - ${++totalSuccessRequests} request`, 'color: #008000');
-				 document.title = 'Add Friends to ${user.name}🙋‍♂️ - ${++totalSuccessRequests} request';
+				 document.title = 'Add Friends to ${user.name}🙋‍♂️ - ${totalSuccessRequests} request';
+				parentElement.innerHTML = `<b>Đã Gửi: <span style='color:red'>Tổng số Yêu Cầu còn lại ${total - totalSuccessRequests}
+				<br/>Thời gian chờ ${delayTime} Giây</span>
+				<br/>Đã Gửi: <span style='color:red'>${totalSuccessRequests}</span> yêu cầu<br/>Add Friends to <span style='color:green'>${user.name}🙋</span></b>
 				}
 				else if (response === 'ARE_FRIENDS') {
 					console.log(`🤝 Đã là bạn bè với ${user.name}`)
+					parentElement.innerHTML = `🤝 Đã là bạn bè với ${user.name}`
 				}
 				else {
 					 if (totalFailedRequests >= 200) {
@@ -161,3 +165,8 @@ function request(method, url, formDataObject) {
 		}
 	});
 }
+
+	let parentElement = document.createElement("div");
+	parentElement.id = "sf_af_result";
+	parentElement.style = "position:fixed;top: 20%;left: 50%;transform: translate(-50%, -50%);border-radius: 5px;margin: 0; text-decoration: none;font-size: 20px;color: #1b2631; margin-bottom: 5px;width: 400px;height:100px;background: #ffffff;text-align: center;align-items: center;padding: 40px;border: 1px solid #b3b3b3;box-shadow: 0px 5px 10px rgb(0 0 0 / 20%);z-index: 9999;";
+	document.getElementsByTagName("body")[0].appendChild(parentElement);
