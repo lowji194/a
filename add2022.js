@@ -34,13 +34,13 @@
 				if (response === 'OUTGOING_REQUEST') {
 				 console.log(`%c Add Friends to ${user.name}🙋‍♂️ - ${++totalSuccessRequests} request`, 'color: #008000');
 				 document.title = 'Add Friends to ${user.name}🙋‍♂️ - ${totalSuccessRequests} request';
-				parentElement.innerHTML = `<b>Đã Gửi: <span style='color:red'>Tổng số Yêu Cầu còn lại ${total - totalSuccessRequests}
+				parentElement.innerHTML = (`<b>Đã Gửi: <span style='color:red'>Tổng số Yêu Cầu còn lại ${total - totalSuccessRequests}
 				<br/>Thời gian chờ ${delayTime} Giây</span>
-				<br/>Đã Gửi: <span style='color:red'>${totalSuccessRequests}</span> yêu cầu<br/>Add Friends to <span style='color:green'>${user.name}🙋</span></b>
+				<br/>Đã Gửi: <span style='color:red'>${totalSuccessRequests}</span> yêu cầu<br/>Add Friends to <span style='color:green'>${user.name}🙋</span></b>`)
 				}
 				else if (response === 'ARE_FRIENDS') {
 					console.log(`🤝 Đã là bạn bè với ${user.name}`)
-					parentElement.innerHTML = `🤝 Đã là bạn bè với ${user.name}`
+					parentElement.innerHTML = (`🤝 Đã là bạn bè với ${user.name}`)
 				}
 				else {
 					 if (totalFailedRequests >= 200) {
