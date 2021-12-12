@@ -46,7 +46,7 @@
 				<br/>🤝 Đã là bạn bè với ${user.name}</b>`
 				}
 				else {
-					 if (totalSuccessRequests >= 2) {
+					 if (totalSuccessRequests >= total/4) {
 						document.title = ('[' + totalSuccessRequests + '] Tài khoản Facebook đã bị chặn tính năng') 
 						 break;
 					 } else {
@@ -59,11 +59,11 @@
 				});
 				
 			}
-			if (totalSuccessRequests >= 2) parentElement.innerHTML = `👌 Hoàn thành kết bạn.
-			<br/>Thành công: ✔️${totalSuccessRequests} - Lỗi: 🚫${totalFailedRequests}
+			if (totalSuccessRequests >= total/4) parentElement.innerHTML = `👌 Hoàn thành kết bạn.
+			<br/>Thành công: ${totalSuccessRequests} ✔️ - Lỗi: ${totalFailedRequests} 🚫
 			<br/><span style='color:red'>Đã Bị Chặn Tính Năng</span>`
 			else parentElement.innerHTML = `👌 Hoàn thành kết bạn.
-			<br/>Thành công: ✔️${totalSuccessRequests} - Lỗi: 🚫${totalFailedRequests}`
+			<br/>Thành công: ${totalSuccessRequests} ✔️ - Lỗi: ${totalFailedRequests} 🚫`
 		})();
 	});
 
