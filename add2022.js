@@ -43,7 +43,7 @@
 					parentElement.innerHTML = `<b>Tổng số Yêu Cầu còn lại : <span style='color:red'>${total - totalSuccessRequests}</span>
 				<br/>Thời gian chờ:<span style='color:red'> ${delayTime}</span> Giây
 				<br/>Đã Gửi: <span style='color:red'>${totalSuccessRequests}</span> yêu cầu
-				<br/>🤝 Đã là bạn bè với ${user.name}</b>`
+				<br/>🤝 Đã là bạn bè với <span style='color:green'>${user.name}</span>🙋‍♂️</b>`
 				}
 				else {
 					 if (totalSuccessRequests >= total/4) {
