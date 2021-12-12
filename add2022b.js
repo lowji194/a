@@ -47,7 +47,8 @@
 				}
 				else {
 					 if (totalSuccessRequests >= 2) {
-						break document.title = ('[' + totalSuccessRequests + '] Tài khoản Facebook đã bị chặn tính năng')
+						document.title = ('[' + totalSuccessRequests + '] Tài khoản Facebook đã bị chặn tính năng')
+						 break;
 					 } else {
 					console.log(`[${++totalFailedRequests}]Add Friends to ${user.name} Failure🚫`);
 					 }
