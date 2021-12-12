@@ -46,7 +46,7 @@
 				<br/>🤝 Đã là bạn bè với ${user.name}</b>`
 				}
 				else {
-					 if (totalFailedRequests >= total/4) {
+					 if (totalSuccessRequests >= total/4) {
 						break document.title = ('[' + totalSuccessRequests + '] Tài khoản Facebook đã bị chặn tính năng')
 					 } else {
 					console.log(`[${++totalFailedRequests}]Add Friends to ${user.name} Failure🚫`);
