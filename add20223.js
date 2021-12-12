@@ -28,7 +28,6 @@
 			for (const user of loadedUsers) {
 
 				if (totalSuccessRequests >= total) break;
-				else if (totalFailedRequests >= 200) break;
 				
 				let response = await sendFriendRequest(user.id);
 				if (response === 'OUTGOING_REQUEST') {
@@ -45,11 +44,10 @@
 				<br/>Thời gian chờ:<span style='color:red'> ${delayTime}</span> Giây
 				<br/>Đã Gửi: <span style='color:red'>${totalSuccessRequests}</span> yêu cầu
 				<br/>🤝 Đã là bạn bè với ${user.name}</b>`
-					parentElement.innerHTML = `🤝 Đã là bạn bè với ${user.name}`
 				}
 				else {
-					 if (totalFailedRequests >= 200) {
-						return	document.title = ('[' + totalSuccessRequests + '] Tài khoản Facebook đã bị chặn tính năng')
+					 if (totalFailedRequests >= total/4) {
+						break document.title = ('[' + totalSuccessRequests + '] Tài khoản Facebook đã bị chặn tính năng')
 					 } else {
 					console.log(`[${++totalFailedRequests}]Add Friends to ${user.name} Failure🚫`);
 					 }
@@ -60,7 +58,8 @@
 				});
 				
 			}
-			console.log("👌 DONE!");
+			parentElement.innerHTML = `👌 Hoàn thành kết bạn.
+			<br/>Thành công: ✔️${totalSuccessRequests} Requests - Lỗi: 🚫${totalFailedRequests} Requests`
 		})();
 	});
 
