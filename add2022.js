@@ -59,7 +59,7 @@
 				});
 				
 			}
-			if (totalFailedRequests > totalSuccessRequests || totalFailedRequests >= 500) parentElement.innerHTML = `👌 Hoàn thành kết bạn.
+			if (/*totalFailedRequests > totalSuccessRequests || */totalFailedRequests >= 500) parentElement.innerHTML = `👌 Hoàn thành kết bạn.
 			<br/>Thành công: ${totalSuccessRequests} ✔️ - Lỗi: ${totalFailedRequests} 🚫
 			<br/><span style='color:red'>Đã Bị Chặn Tính Năng</span>`
 			else parentElement.innerHTML = `👌 Hoàn thành kết bạn.
