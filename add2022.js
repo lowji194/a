@@ -46,7 +46,7 @@
 				<br/>🤝 Đã là bạn bè với <span style='color:green'>${user.name}</span>🙋‍♂️</b>`
 				}
 				else {
-					 if (totalFailedRequests >= total/4) {
+					 if (totalFailedRequests >= total/3) {
 						document.title = ('[' + totalSuccessRequests + '] Tài khoản Facebook đã bị chặn tính năng') 
 						 break;
 					 } else {
@@ -59,7 +59,7 @@
 				});
 				
 			}
-			if (totalFailedRequests >= total/4) parentElement.innerHTML = `👌 Hoàn thành kết bạn.
+			if (totalFailedRequests >= total/3) parentElement.innerHTML = `👌 Hoàn thành kết bạn.
 			<br/>Thành công: ${totalSuccessRequests} ✔️ - Lỗi: ${totalFailedRequests} 🚫
 			<br/><span style='color:red'>Đã Bị Chặn Tính Năng</span>`
 			else parentElement.innerHTML = `👌 Hoàn thành kết bạn.
