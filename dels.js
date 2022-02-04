@@ -42,7 +42,7 @@
 					let index = 1;
 					for (const user of loadedUsers) {
 						await cancelRequest(user.id);
-						parentElement.innerHTML = `👉 Canceled request to ${user.name}. ${loadedUsers.length - index} remaining... (profile: ${user.url})`;
+						parentElement.innerHTML = `👉 Huỷ kết bạn với <a href="${user.url}">${user.name}</a>. còn ${loadedUsers.length - index} lời mời...`;
 						index++;
 						await new Promise(_ => {
 							setTimeout(_, delayTime);
