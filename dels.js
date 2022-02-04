@@ -8,8 +8,8 @@
 	parentElement.style = "position:fixed;top: 20%;left: 50%;transform: translate(-50%, -50%);border-radius: 5px;margin: 0; text-decoration: none;font-size: 20px;color: #1b2631; margin-bottom: 5px;width: 400px;height:100px;background: #ffffff;text-align: center;align-items: center;padding: 40px;border: 1px solid #b3b3b3;box-shadow: 0px 5px 10px rgb(0 0 0 / 20%);z-index: 9999;";
 	document.getElementsByTagName("body")[0].appendChild(parentElement);
 			
-	parentElement.innerHTML = `Starting...`;
-	parentElement.innerHTML = `Get list requests...`;
+	parentElement.innerHTML = `Bắt đầu...`;
+	parentElement.innerHTML = `Đang tải yêu cầu đã gửi...`;
 
 	let loadedUsers = [];
 
