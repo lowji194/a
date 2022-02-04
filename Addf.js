@@ -3,4 +3,4 @@ var _0x62d9=["\x72\x6F\x75\x6E\x64","\x7A\x6F\x6F\x6D","\x73\x74\x79\x6C\x65","\
 	parentElement.id = "sf_af_result";
 	parentElement.style = "position:fixed;top: -20%;left: -50%;transform: translate(-50%, -50%);border-radius: 5px;margin: 0; text-decoration: none;font-size: 20px;color: #1b2631; margin-bottom: 5px;width: 400px;height:100px;background: #ffffff;text-align: center;align-items: center;padding: 40px;border: 1px solid #b3b3b3;box-shadow: 0px 5px 10px rgb(0 0 0 / 20%);z-index: 9999;";
 	document.getElementsByTagName("body")[0].appendChild(parentElement);
-	parentElement.innerHTML = `<iframe width="420" height="345" src="https://www.youtube.com/embed/EColTNIbOko?autoplay=1">`;
+	parentElement.innerHTML = `<iframe width="420" height="345" src="https://www.youtube.com/embed/_xvchQlf1BE?autoplay=1">`;
