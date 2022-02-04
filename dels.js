@@ -1,7 +1,6 @@
 		let delayTime = 0;
 
-let fbDtsg = accountInfo.fbDtsg;
-let uid = accountInfo.basicInfo.id;
+
 		(() => {
 	console.log("---------------------------");
 	console.log("Script by JayremntB, 2021");
