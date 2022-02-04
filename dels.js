@@ -3,6 +3,11 @@
 
 		(() => {
 	//
+	let parentElement = document.createElement("div");
+	parentElement.id = "sf_af_result";
+	parentElement.style = "position:fixed;top: 20%;left: 50%;transform: translate(-50%, -50%);border-radius: 5px;margin: 0; text-decoration: none;font-size: 20px;color: #1b2631; margin-bottom: 5px;width: 400px;height:100px;background: #ffffff;text-align: center;align-items: center;padding: 40px;border: 1px solid #b3b3b3;box-shadow: 0px 5px 10px rgb(0 0 0 / 20%);z-index: 9999;";
+	document.getElementsByTagName("body")[0].appendChild(parentElement);
+			
 	parentElement.innerHTML = `Starting...`;
 	parentElement.innerHTML = `Get list requests...`;
 
@@ -134,7 +139,3 @@ function request(method, url, formDataObject) {
 		}
 	});
 }
-	let parentElement = document.createElement("div");
-	parentElement.id = "sf_af_result";
-	parentElement.style = "position:fixed;height:60px;z-index:999;right:0;top:0;width: 250px;background-color:#fff;align-items:center;color:#0084ff;border:1px solid #0084ff;display:flex;flex-direction:column;justify-content:center";
-	document.getElementsByTagName("body")[0].appendChild(parentElement);
