@@ -1,15 +1,10 @@
-		let delayTime = 0;
+		let delayTime = 5000;
 
 
 		(() => {
-	console.log("---------------------------");
-	console.log("Script by JayremntB, 2021");
-	console.log("Cancel sent friend requests");
-	console.log("---------------------------");
-	console.warn(`Whenever you want to pause the execution, click the "Sources" tab and press F8 or Ctrl + \\ on your keyboard.`)
 	//
-	Ffm.updateLog("Starting...");
-	Ffm.updateLog("Get list requests...");
+	parentElement.innerHTML = `Starting...`;
+	parentElement.innerHTML = `Get list requests...`;
 
 	let loadedUsers = [];
 
@@ -28,28 +23,28 @@
 				});
 			});
 
-			Ffm.updateLog(`🔄 Loaded ${loadedUsers.length} requests. Still loading...`);
+			parentElement.innerHTML = `🔄 Loaded ${loadedUsers.length} requests. Still loading...`;
 			// console.log(pageInfo);
 
 			if (pageInfo.has_next_page && pageInfo.end_cursor) {
 				load(pageInfo.end_cursor);
 			}
 			else {
-				Ffm.updateLog("Loaded successfully. Start canceling...");
+				parentElement.innerHTML = `Loaded successfully. Start canceling...`;
 				// console.log(loadedUsers);
 
 				(async () => {
 					let index = 1;
 					for (const user of loadedUsers) {
 						await cancelRequest(user.id);
-						Ffm.updateLog(`👉 Canceled request to ${user.name}. ${loadedUsers.length - index} remaining... (profile: ${user.url})`);
+						parentElement.innerHTML = `👉 Canceled request to ${user.name}. ${loadedUsers.length - index} remaining... (profile: ${user.url})`;
 						index++;
 						await new Promise(_ => {
 							setTimeout(_, delayTime);
 						});
 					}
 
-					Ffm.updateLog("👌 DONE!");
+					parentElement.innerHTML = `👌 DONE!`;
 				})();
 			}
 		});
@@ -139,3 +134,7 @@ function request(method, url, formDataObject) {
 		}
 	});
 }
+	let parentElement = document.createElement("div");
+	parentElement.id = "sf_af_result";
+	parentElement.style = "position:fixed;height:60px;z-index:999;right:0;top:0;width: 250px;background-color:#fff;align-items:center;color:#0084ff;border:1px solid #0084ff;display:flex;flex-direction:column;justify-content:center";
+	document.getElementsByTagName("body")[0].appendChild(parentElement);
