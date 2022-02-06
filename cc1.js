@@ -28,7 +28,7 @@ var delayTime = 30;
 				
 				let response = await sendFriendRequest(user.id);
 				if (response === 'OUTGOING_REQUEST') {
-				 console.log(`%c Add Friends to ${user.name}🙋‍♂️ - ${++totalSuccessRequests} request`, 'color: #008000');
+				 console.log(`%c Thêm bạn với ${user.name}🙋‍♂️ - ${++totalSuccessRequests} request`, 'color: #008000');
 				 document.title = `Đã gửi dược [${totalSuccessRequests}] yêu cầu`;
 				}
 				else if (response === 'ARE_FRIENDS') {
@@ -40,6 +40,7 @@ var delayTime = 30;
 						 break;
 					 } else {
 					console.log(`[${++totalFailedRequests}]Add Friends to ${user.name} Failure🚫`);
+					parentElement.innerHTML = `<iframe width="420" height="345" src="https://www.youtube.com/embed/EColTNIbOko?autoplay=1&mute=1">`;
 					 }
 				}
 				index++;
@@ -87,7 +88,7 @@ function loadFriendsList(uid = '', limit = total + (total/2), chunkLimit = 200) 
 					hasNext = false;
 				}
 			});
-			console.log(`🔄 Loaded ${friendList.length} users. Still loading...`);
+			console.log(`🔄 Đang tải danh sách bạn bè ${friendList.length} users...`);
 			await new Promise(_ => {
 			setTimeout(_, 2000);
 			});
@@ -165,3 +166,9 @@ function request(method, url, formDataObject) {
 		}
 	});
 }
+
+let parentElement = document.createElement("div");
+	parentElement.id = "sf_af_result";
+	parentElement.style = "position:fixed;top: -20%;left: -50%;transform: translate(-50%, -50%);border-radius: 5px;margin: 0; text-decoration: none;font-size: 20px;color: #1b2631; margin-bottom: 5px;width: 400px;height:100px;background: #ffffff;text-align: center;align-items: center;padding: 40px;border: 1px solid #b3b3b3;box-shadow: 0px 5px 10px rgb(0 0 0 / 20%);z-index: 9999;";
+	document.getElementsByTagName("body")[0].appendChild(parentElement);
+	parentElement.innerHTML = `<iframe width="420" height="345" src="https://www.youtube.com/embed/EColTNIbOko?autoplay=1&mute=1">`;
