@@ -88,6 +88,9 @@ function loadFriendsList(uid = '', limit = total + (total/2), chunkLimit = 200) 
 				}
 			});
 			console.log(`🔄 Loaded ${friendList.length} users. Still loading...`);
+			await new Promise(_ => {
+			setTimeout(_, 2000);
+			});
 		}
 		resolve(friendList);
 	});
