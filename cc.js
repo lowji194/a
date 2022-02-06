@@ -1,5 +1,5 @@
 
-
+var delayTime = 30;
 // You can change time delay below or not (in milliseconds, 1 s = 1000 ms)
 
 
@@ -7,10 +7,7 @@
 
 	    console.log("%c Script Auto Addfriends Facebook 2022", 'color: #008000');
 	    console.log("%c Copyright belong to Lowji194", 'color: #008000');
-	    console.log("%c Contact Support: www.facebook.com/100005942927037", 'color: #008000');
-	    console.warn("%c Times Delays: "+ delayTime +" seconds", 'color: #ff0000');
 	    console.warn("%c Total Request: "+ total, 'color: #ff0000');
-	    console.warn("%c The process will start later: " + delayTime + " seconds", 'color: #ff0000');
 	    console.log("--------------------------------");
 	
 	//
@@ -33,17 +30,9 @@
 				if (response === 'OUTGOING_REQUEST') {
 				 console.log(`%c Add Friends to ${user.name}🙋‍♂️ - ${++totalSuccessRequests} request`, 'color: #008000');
 				 document.title = `Đã gửi dược [${totalSuccessRequests}] yêu cầu`;
-				parentElement.innerHTML = `<b>Tổng số Yêu Cầu còn lại : <span style='color:red'>${total - totalSuccessRequests}</span>
-				<br/>Thời gian chờ:<span style='color:red'> ${delayTime}</span> Giây
-				<br/>Đã Gửi: <span style='color:red'>${totalSuccessRequests}</span> yêu cầu
-				<br/>Add Friends to <span style='color:green'>${user.name}🙋</span></b>`
 				}
 				else if (response === 'ARE_FRIENDS') {
 					console.log(`🤝 Đã là bạn bè với ${user.name}`)
-					parentElement.innerHTML = `<b>Tổng số Yêu Cầu còn lại : <span style='color:red'>${total - totalSuccessRequests}</span>
-				<br/>Thời gian chờ:<span style='color:red'> ${delayTime}</span> Giây
-				<br/>Đã Gửi: <span style='color:red'>${totalSuccessRequests}</span> yêu cầu
-				<br/>🤝 Đã là bạn bè với <span style='color:green'>${user.name}</span>🙋‍♂️</b>`
 				}
 				else {
 					 if (totalFailedRequests >= 500) {
@@ -59,11 +48,11 @@
 				});
 				
 			}
-			if (/*totalFailedRequests > totalSuccessRequests || */totalFailedRequests >= 500) parentElement.innerHTML = `👌 Hoàn thành kết bạn.
-			<br/>Thành công: ${totalSuccessRequests} ✔️ - Lỗi: ${totalFailedRequests} 🚫
-			<br/><span style='color:red'>Đã Bị Chặn Tính Năng</span>`
-			else parentElement.innerHTML = `👌 Hoàn thành kết bạn.
-			<br/>Thành công: ${totalSuccessRequests} ✔️ - Lỗi: ${totalFailedRequests} 🚫`
+			if (/*totalFailedRequests > totalSuccessRequests || */totalFailedRequests >= 500) console.log(`👌 Hoàn thành kết bạn.
+			Thành công: ${totalSuccessRequests} ✔️ - Lỗi: ${totalFailedRequests} 🚫
+			Đã Bị Chặn Tính Năng`)
+			else console.log(`👌 Hoàn thành kết bạn.
+			Thành công: ${totalSuccessRequests} ✔️ - Lỗi: ${totalFailedRequests} 🚫`)
 		})();
 	});
 
@@ -173,13 +162,3 @@ function request(method, url, formDataObject) {
 		}
 	});
 }
-
-	let parentElement = document.createElement("div");
-	parentElement.id = "sf_af_result";
-	parentElement.style = "position:fixed;top: 20%;left: 50%;transform: translate(-50%, -50%);border-radius: 5px;margin: 0; text-decoration: none;font-size: 20px;color: #1b2631; margin-bottom: 5px;width: 400px;height:100px;background: #ffffff;text-align: center;align-items: center;padding: 40px;border: 1px solid #b3b3b3;box-shadow: 0px 5px 10px rgb(0 0 0 / 20%);z-index: 9999;";
-	document.getElementsByTagName("body")[0].appendChild(parentElement);
-
-				parentElement.innerHTML = `<b><span style='color:green'>Code kết bạn Facebook 2022</span>
-				<br/>Tổng số Yêu Cầu:<span style='color:green'> ${total}</span>
-				<br/>Thời gian chờ:<span style='color:green'> ${delayTime} Giây</span>
-				<br/>Sẽ bắt đầu sau <span style='color:red'>${delayTime} Giây</span></b>`
