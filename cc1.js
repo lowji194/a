@@ -1,4 +1,4 @@
-
+let targetId = prompt("Nhập UID kết bạn vào dây", "");
 var delayTime = 30;
 // You can change time delay below or not (in milliseconds, 1 s = 1000 ms)
 
