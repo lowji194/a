@@ -17,7 +17,6 @@
 	document.getElementsByTagName("body")[0].appendChild(parentElement);
 	parentElement.innerHTML = `<a href="https://fb.com/me/friends">Vào trang xóa bạn bè</a>
 	</br><a href="https://fb.com/me/photos">Vào trang xóa ảnh và video</a>
-	</br><a href="https://fb.com/friends/requests">Chấp nhận kết bạn</a>
-	</br><a href="https://1drv.ms/u/s!ArZr5JjXOC-DrKJ940YIkKGCfYtZ1w">File Auto Kết Bạn</a>`;
+	</br><a href="https://fb.com/friends/requests">Chấp nhận kết bạn</a>`;
 		
 	}
