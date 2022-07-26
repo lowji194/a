@@ -45,7 +45,7 @@
 */
 	setTimeout(function() {
 	window.scrollTo(0, document.body.scrollHeight);
-	}, time * 3);
+	}, time * 2);
 	
 	function add(n) {
 		rd = getRandomInt(Lowji194.length - 2);
