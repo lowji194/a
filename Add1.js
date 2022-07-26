@@ -43,9 +43,6 @@
 	    setTimeout(loop, time);
 	}, time)
 */
-	setTimeout(function() {
-	window.scrollTo(0, document.body.scrollHeight);
-	}, time * 2);
 	
 	function add(n) {
 		rd = getRandomInt(Lowji194.length - 2);
@@ -173,6 +170,9 @@
 	            }
 	        }
 	    }, 3000)
+	setTimeout(function() {
+	window.scrollTo(0, document.body.scrollHeight);
+	}, 3500);
 	}
 
 
