@@ -172,6 +172,7 @@
 	    }, 3000)
 	setTimeout(function() {
 	window.scrollTo(0, document.body.scrollHeight);
+		console.warn("%c Auto Scroll Enable", 'color: #008000')
 	}, 3500);
 	}
 
