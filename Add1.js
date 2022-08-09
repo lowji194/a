@@ -33,7 +33,7 @@
 
 	var check = document.getElementsByClassName('a8c37x1j ni8dbmo4 stjgntxs l9j0dhe7 ltmttdrg g0qnabr5 r8blr3vg')
 	var check1 = document.getElementsByClassName('dati1w0a jbae33se hv4rvrfc bjjx79mm')
-/*	setTimeout(function loop() {
+	setTimeout(function loop() {
 	    if (total - Lowji194.length <= 0) {
 	        return console.log('Đã đủ số bạn bè ngừng Scroll')
 	    } else if (Lowji194.length < 20) {
@@ -42,14 +42,23 @@
 	    }
 	    setTimeout(loop, time);
 	}, time)
-*/
-	
+
 	function add(n) {
 		rd = getRandomInt(Lowji194.length - 2);
-		
-/*		if (Code !== 'ok') {
-	        return alert('Lỗi Sever');
-	    }
+		    var a = new Date();
+			var w = new Date,
+			h = w.getHours();
+			var mi = w.getMinutes();
+			var se = w.getSeconds();
+			if (10 > h) {
+			h = "0" + h
+			}
+			if (10 > mi) {
+			mi = "0" + mi
+			}
+			if (10 > se) {
+			se = "0" + se
+			}
 	    /* Redirect after the end */
 	    if (total === 0) {
 	        window.location.href = 'http://facebook.com/profile.php';
@@ -59,7 +68,7 @@
 	            document.title = ('[' + total + '] Bị chặn tính năng tạm nghỉ ' + sleep + ' phút')
 	            setTimeout(continuousWhenPageLoad, sleep * 60 * 1000);
 	            return stop = 0;
-	        }/* else if (total - Lowji194.length <= 0) {
+	        } else if (total - Lowji194.length <= 0) {
 	            console.log('Đã đủ số bạn bè ngừng Scroll')
 	        } else if (Lowji194.length < 8) {
 	            window.scrollTo(0, document.body.scrollHeight);
@@ -67,16 +76,15 @@
 	            setTimeout(continuousWhenPageLoad, 3000);
 	            return;
 	        }
-*/			
 	        if (window.location.href.includes("groups")) {
 	            /* Click add to groups friends buttons */
 	            let label = Lowji194[n].lastChild.lastChild.firstChild.firstChild.firstChild.firstChild.innerText
 
 	            if (Lowji194[n].lastChild.lastChild.lastChild.firstChild.firstChild.firstChild.firstChild == null || Lowji194[n].lastChild.lastChild.lastChild.firstChild.firstChild.firstChild.firstChild.innerText !== 'Thêm bạn bè') {
 	                console.log(`%c Bỏ qua ${label}`, 'color: #ff0000');
-	             //   Lowji194[n].remove();
+	                Lowji194[n].remove();
 	                setTimeout(function() {
-	                    add(n + 1);
+	                    add(0);
 	                }, 500);
 	            } else {
 	                Lowji194[n].lastChild.lastChild.lastChild.firstChild.firstChild.firstChild.firstChild.click(); // click add friends
@@ -91,23 +99,23 @@
 	                            console.log(`[${++stop}]Add Friends to ${label} Failure🚫 - ${check[0].innerText}`)
 	                        }
 	                        setTimeout(function() {
-	                            add(n + 1);
+	                            add(0);
 	                        }, 4000);
 	                    } else {
 	                        success++;
-	                        console.log(`%c Add Friends to ${label}🙋‍♂️ - ${--total} request [${speed = Math.round(getRndInteger(number, number))}⏰ giây]`, 'color: #008000');
+	                        console.log(`%c Add Friends to ${label}🙋‍♂️ - ${--total} request [${h}:${mi}:${se}]`, 'color: #008000');
 	                        parentElement.innerHTML = `<b>Đã Gửi: <span style='color:red'>${success}</span> yêu cầu<br/>Add Friends to <span style='color:green'>${label}🙋</span></b>\nSố bạn bè được hiển thị ‍${Lowji194.length}🙋`;
 	                        document.title = (`Đã gửi thành công [${success}✔️]`);
 	                        if (stop > 0) {
 	                            stop--
 	                        }
 	                        setTimeout(function() {
-	                            add(n + 1);
+	                            add(0);
 	                        }, time - 2500);
 	                    }
 	                }, 2500);
 	                setTimeout(function() {
-	                //    Lowji194[n].remove();
+	                    Lowji194[n].remove();
 	                }, 3500);
 	            }
 	        } else {
