@@ -20,7 +20,7 @@
 	var success = 0;
 	var stop = 0;
 	var Lowji194 = document.querySelectorAll("div[aria-label='Thêm bạn bè']")
-	Lowji194[0].click();
+	Lowji194[0].remove();
 	setTimeout(function loop() {
 	  if (total - Lowji194.length <= 0) {
 	    return console.log('Đã đủ số bạn bè ngừng Scroll')
