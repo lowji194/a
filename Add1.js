@@ -27,7 +27,7 @@
 	if (window.location.href.includes("groups")) {
 	    var Lowji194 = document['getElementsByClassName']('rq0escxv l9j0dhe7 du4w35lb hybvsw6c io0zqebd m5lcvass fbipl8qg nwvqtn77 k4urcfbm ni8dbmo4 stjgntxs sbcfpzgs')[0].getElementsByClassName('ue3kfks5 pw54ja7n uo3d90p7 l82x9zwi a8c37x1j');
 	} else {
-	    var Lowji194 = document['getElementsByClassName']('i85zmo3j h8391g91 m0cukt09 kpwa50dg ta68dy8c o5pw47cy bdao358l alzwoclg mfn553m3');
+	    var Lowji194 = document['getElementsByClassName']('x6s0dn4 x1lq5wgf xgqcy7u x30kzoy x9jhf4c x1olyfxc x9f619 x78zum5 x1e56ztr xyamay9 x1pi30zi x1l90r2v x1swvt13 x1gefphp');
 		if (document.querySelectorAll("div[aria-label='Thêm bạn bè']")[0] == undefined == false) document.querySelectorAll("div[aria-label='Thêm bạn bè']")[0].click();
 	}
 
