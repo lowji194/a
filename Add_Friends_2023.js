@@ -53,11 +53,7 @@
 	    window.location.href = 'http://facebook.com/profile.php';
 	  }
 	  setTimeout(function continuousWhenPageLoad() {
-	    if (stop >= 30) {
-	      document.title = ('[' + total + '] Bị chặn tính năng tạm nghỉ ' + sleep + ' phút')
-	      setTimeout(continuousWhenPageLoad, sleep * 60 * 1000);
-	      return stop = 0;
-	    } else if (total - Lowji194.length <= 0) {
+		if (total - Lowji194.length <= 0) {
 	      console.log('Đã đủ số bạn bè ngừng Scroll')
 	    } else if (Lowji194.length < 8) {
 	      window.scrollTo(0, document.body.scrollHeight);
