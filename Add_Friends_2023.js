@@ -89,9 +89,6 @@
 	          }, time - 2500);
 	        }
 	      }, 2500);
-	      setTimeout(function() {
-	        Lowji194[n].parentNode.parentNode.parentNode.parentNode.parentNode.parentNode.remove();
-	      }, 3500);
 	    } else {
 	      /* Click add to list friends buttons */
 	      let label = Lowji194[n].parentNode.parentNode.parentNode.parentNode.childNodes[1].firstChild.innerText
@@ -116,10 +113,10 @@
 	          }, time - 2500);
 	        }
 	      }, 2500);
-	      setTimeout(function() {
-	        Lowji194[n].parentNode.parentNode.parentNode.parentNode.remove();
-	      }, 3500);
 	    }
+		setTimeout(function() {
+	        Lowji194[n].remove();
+	      }, 3500);
 	  }, 0);
 	  /* close popup */
 	  popup = document.querySelectorAll("div[aria-label='OK']")
