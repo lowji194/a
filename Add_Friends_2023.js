@@ -22,6 +22,16 @@ var stop = 0;
 var Lowji194 = document.querySelectorAll("div[aria-label='Thêm bạn bè']")
 Lowji194[n].remove();
 
+	setTimeout(function loop() {
+	  if (total - Lowji194.length <= 0) {
+	    return console.log('Đã đủ số bạn bè ngừng Scroll')
+	  } else if (Lowji194.length < 50) {
+	    window.scrollTo(0, document.body.scrollHeight);Lowji194 = document.querySelectorAll("div[aria-label='Thêm bạn bè']");
+	    console.warn("%c Auto Scroll Enable", 'color: #008000', `Số bạn bè được hiển thị ‍${Lowji194.length}🙋`);
+	  }
+	  setTimeout(loop, time);
+	}, time)
+
 function add(n) {
   var Lowji194 = document.querySelectorAll("div[aria-label='Thêm bạn bè']")
   var speed = Math.round(getRndInteger(number, 5));
@@ -44,7 +54,7 @@ function add(n) {
     window.location.href = 'http://facebook.com/profile.php';
   }
   setTimeout(function continuousWhenPageLoad() {
-    if (Lowji194.length < 50) {
+    if (Lowji194.length < 8) {
       window.scrollTo(0, document.body.scrollHeight);Lowji194 = document.querySelectorAll("div[aria-label='Thêm bạn bè']");
       console.warn("%c Auto Scroll Enable", 'color: #008000', `Số bạn bè được hiển thị ‍${Lowji194.length}🙋`);
       setTimeout(continuousWhenPageLoad, 3000);
