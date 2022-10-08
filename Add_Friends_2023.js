@@ -44,8 +44,7 @@ function add(n) {
   }
   setTimeout(function continuousWhenPageLoad() {
     if (Lowji194.length < 50) {
-      window.scrollTo(0, document.body.scrollHeight);
-      var Lowji194 = document.querySelectorAll("div[aria-label='Thêm bạn bè']")
+      window.scrollTo(0, document.body.scrollHeight);Lowji194 = document.querySelectorAll("div[aria-label='Thêm bạn bè']");
       console.warn("%c Auto Scroll Enable", 'color: #008000', `Số bạn bè được hiển thị ‍${Lowji194.length}🙋`);
       setTimeout(continuousWhenPageLoad, 3000);
       return;
