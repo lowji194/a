@@ -1,6 +1,7 @@
 
 	var speed = Math.round(getRndInteger(number, 10));
 	var time = speed * 1000; // Don't modify
+	window.scrollTo(0, document.body.scrollHeight);
 
 	function getRndInteger(min, max) {
 	  return Math.floor(Math.random() * max) + min;
@@ -19,8 +20,10 @@
 	}, 100);
 	var success = 0;
 	var stop = 0;
+
 	var Lowji194 = document.querySelectorAll("div[aria-label='Thêm bạn bè']")
 	Lowji194[0].remove();
+
 	setTimeout(function loop() {
 	  if (total - Lowji194.length <= 0) {
 	    return console.log('Đã đủ số bạn bè ngừng Scroll')
