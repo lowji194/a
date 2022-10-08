@@ -20,6 +20,7 @@ setTimeout(function() {
 var success = 0;
 var stop = 0;
 var Lowji194 = document.querySelectorAll("div[aria-label='Thêm bạn bè']")
+Lowji194[n].remove();
 
 function add(n) {
   var Lowji194 = document.querySelectorAll("div[aria-label='Thêm bạn bè']")
