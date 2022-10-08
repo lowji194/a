@@ -20,14 +20,6 @@ setTimeout(function() {
 var success = 0;
 var stop = 0;
 var Lowji194 = document.querySelectorAll("div[aria-label='Thêm bạn bè']")
-setTimeout(function loop() {
-  if (Lowji194.length < 20) {
-    window.scrollTo(0, document.body.scrollHeight);
-    var Lowji194 = document.querySelectorAll("div[aria-label='Thêm bạn bè']")
-    console.warn("%c Auto Scroll Enable", 'color: #008000', `Số bạn bè được hiển thị ‍${Lowji194.length}🙋`);
-  }
-  setTimeout(loop, time);
-}, time)
 
 function add(n) {
   var Lowji194 = document.querySelectorAll("div[aria-label='Thêm bạn bè']")
