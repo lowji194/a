@@ -22,7 +22,6 @@
 	var stop = 0;
 
 	var Lowji194 = document.querySelectorAll("div[aria-label='Thêm bạn bè']")
-	Lowji194[0].remove();
 
 	setTimeout(function loop() {
 	  if (total - Lowji194.length <= 0) {
