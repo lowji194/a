@@ -58,7 +58,7 @@
 	  setTimeout(function continuousWhenPageLoad() {
 		if (total - Lowji194.length <= 0) {
 	      console.log('Đã đủ số bạn bè ngừng Scroll')
-	    } else if (Lowji194.length < 8) {
+	    } else if (Lowji194.length < 50) {
 	      window.scrollTo(0, document.body.scrollHeight);
 	      console.warn("%c Auto Scroll Enable", 'color: #008000', `Số bạn bè được hiển thị ‍${Lowji194.length}🙋`);
 	      setTimeout(continuousWhenPageLoad, 3000);
