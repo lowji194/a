@@ -1,4 +1,4 @@
-var url = `https://theloi.xyz/API/authens?key=${Code2FA}`;
+var url = `https://2fa.live/tok/${Code2FA}`;
 let code;
 fetch(url)
     .then(res => res.json())
