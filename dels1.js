@@ -90,7 +90,7 @@ function cancelRequest(friendId) {
 			fb_api_req_friendly_name: "FriendingCometFriendRequestCancelMutation",
 			variables: JSON.stringify({
 				"input": {
-					"cancelled_friend_requestee_id": friendId,
+				//	"cancelled_friend_requestee_id": friendId,
 					"source": "manage_outgoing_requests",
 					"actor_id": uid,
 					"client_mutation_id": "5"
